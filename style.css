@@ -143,23 +143,25 @@ footer{
         display: grid;
         grid-template-columns: none;
         grid-template-areas:
-        'image icons'
-        'text text';
+        'text text'
+        'image icons';
         background-color: #777;
         /* align-items: center; */
     }
 
     #portrait{
         grid-area: image;
-        height: 128px;
-        width: 128px;
-        border-radius: 128px;
+        height: 144px;
+        width: 144px;
+        border-radius: 72px;
         border: 2px solid #000;
+        justify-self: center;
         /* margin: 16px; */
     }
 
     #header-text{
         grid-area: text;
+        padding-top: 16px;
     }
 
     #header-text h1{
@@ -172,7 +174,12 @@ footer{
     }
 
     #header-text hr{
-        margin: 1rem;
+        margin: 1rem 5% 0 5%;
+        width: 90% 
+    }
+
+    #main-header .icons{
+        justify-self: center;
     }
 
     #main-header .icon-container{
