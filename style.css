@@ -198,20 +198,20 @@ footer{
         "hd0"
         "hd1"
         "hd2";
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: 30vh 45vh 15vh;
         grid-template-columns: none;
+        height: 90vh;
     }
 
     header #header-text{
         grid-area: hd0;
         text-align: center;
         align-self: start;
-        height: 25vh;
     }
 
     header #header-text h1{
         font-size: 3rem;
-        margin: 1rem;
+        margin: 2rem;
         text-shadow: 2px 2px 3px var(--shadow-color); 
     }
     
@@ -222,22 +222,22 @@ footer{
     }
     
     header #header-text h3{
-        margin: 1.5rem 0 0.5rem 0;
+        margin: 2.5rem 0 0 1rem;
         text-shadow: 1px 1px 2px var(--shadow-color); 
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     header #portrait{
         justify-self: center;
         grid-area: hd1;
-        margin: 2rem 1rem;
-        height: 40vh;
+        margin: 1.5rem 1rem 1rem 1rem;
+        height: 90%;
     }
 
     header #header-icons{
+        grid-area: hd2;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        height: 15vh;
     }
     
     header #header-icons div{
@@ -247,9 +247,7 @@ footer{
     nav{
         height: 10vh;
     }
-    
-    
-
+       
     #content{
         padding: 2rem 4rem;
     }
