@@ -29,6 +29,8 @@ body{
     height: 100%;
 }
 
+/* Header */
+
 header{
     grid-area: header;
     display: grid;
@@ -40,7 +42,7 @@ header{
 
 header #portrait{
     grid-area: hd0;
-    border-radius: 128px;
+    border-radius: 256px;
     border: 2px solid #000;
     margin: 16px;
     box-shadow: 3px 3px 10px;
@@ -78,7 +80,7 @@ header #header-icons{
 }
 
 header #header-icons div{
-    margin: 2rem;
+    margin: 2rem;  
 }
 
 header #header-icons a{
@@ -86,10 +88,20 @@ header #header-icons a{
     transition: all .2s ease-in-out;
 }
 
+header #header-icons a p, header #header-icons a svg{
+    color: var(--text-color-dark);
+    text-shadow: 1px 1px 2px var(--shadow-color); 
+}
+
 header #header-icons a:hover{
     text-decoration: none;
     transform: scale(1.4);
 }
+
+header #header-icons a:hover p, header #header-icons a:hover svg{
+    color: var(--text-color-light);
+}
+
 
 header #header-icons p{
     display: inline;
@@ -99,10 +111,13 @@ header #header-icons p{
     font-size: 2rem;
 }
 
-header #header-icons img{
+header #header-icons svg{
     width: 2rem;
     height: 2rem;
+    color: var(--text-color-dark)
 }
+
+/* Navigation */
 
 nav{
     grid-area: nav;
@@ -143,6 +158,8 @@ nav #nav-projects{
     grid-area: nav3;
 }
 
+/* Content */
+
 #content{
     grid-area: content;
     background-color: var(--bg-color-light);
@@ -157,6 +174,8 @@ nav #nav-projects{
     padding: 1rem 0 1rem 0;
 }
 
+/* Footer */
+
 footer{
     height: 48px;
     width: 100%;
@@ -168,6 +187,72 @@ footer{
     line-height: 48px;
     box-shadow: 0 -2px 5px var(--shadow-color);
     z-index: 1;   
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 768px){
+    
+    header{
+        grid-template-areas:
+        "hd0"
+        "hd1"
+        "hd2";
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: none;
+    }
+
+    header #header-text{
+        grid-area: hd0;
+        text-align: center;
+        align-self: start;
+        height: 25vh;
+    }
+
+    header #header-text h1{
+        font-size: 3rem;
+        margin: 1rem;
+        text-shadow: 2px 2px 3px var(--shadow-color); 
+    }
+    
+    header #header-text hr{
+        margin: 1.5rem;
+        border: 1px solid black;
+        box-shadow: 2px 2px 3px var(--shadow-color);
+    }
+    
+    header #header-text h3{
+        margin: 1.5rem 0 0.5rem 0;
+        text-shadow: 1px 1px 2px var(--shadow-color); 
+        font-size: 1.1rem;
+    }
+
+    header #portrait{
+        justify-self: center;
+        grid-area: hd1;
+        margin: 2rem 1rem;
+        height: 40vh;
+    }
+
+    header #header-icons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 15vh;
+    }
+    
+    header #header-icons div{
+        margin: 2rem 1rem;
+    }
+
+    nav{
+        height: 10vh;
+    }
+    
+    
+
+    #content{
+        padding: 2rem 4rem;
+    }
 }
 
 
