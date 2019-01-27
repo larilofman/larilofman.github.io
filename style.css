@@ -176,12 +176,22 @@ nav #nav-projects{
     margin: 2rem 5rem;
 }
 
+#content .project-container .block{
+    display: block;
+}
+
 #content .project-container .play-link{  
     margin: 0 0 2rem 1rem;
     display: block;
     font-size: 1.5rem;
     color: var(--text-color-link);
     font-weight: bold;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+
+#content .project-container .play-link:hover{  
+    transform: scale(1.2);
 }
 
 
