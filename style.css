@@ -1,11 +1,12 @@
 :root {
-    --bg-color-dark:#1f1f1f;
-    --bg-color-normal:#888;
+    --bg-color-dark:#212121;
+    --bg-color-normal:#999;
     --bg-color-light:#f1f1f1;
     --shadow-color: rgba(17, 17, 17, 0.8);
     --text-color-dark: #111;
     --text-color-light: #ddd;
     --text-color-hover: #fff;
+    --text-color-link: #022;
   }
 
 * {
@@ -46,6 +47,7 @@ header #portrait{
     border: 2px solid #000;
     margin: 16px;
     box-shadow: 3px 3px 10px;
+    justify-self: center;
 }
 
 header #header-text{
@@ -166,13 +168,51 @@ nav #nav-projects{
     padding: 4rem 6rem;
 }
 
-#content h1{
-    padding-top: 1rem;
+#content .content-main-header{
+    margin-bottom: 5rem;
 }
 
-#content p{
-    padding: 1rem 0 1rem 0;
+#content .project-container{
+    margin: 2rem 5rem;
 }
+
+#content .project-container .play-link{  
+    margin: 0 0 2rem 1rem;
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color-link);
+    font-weight: bold;
+}
+
+
+#content h1{
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-color-dark);
+}
+
+#content h2{
+    padding: 2rem 0 2rem 0;
+    font-size: 2rem;
+    color: var(--text-color-dark);
+    text-decoration: underline;
+}
+
+#content ul{
+    padding: 0 0rem 2rem 0;
+    margin-left: 2rem;
+}
+
+#content iframe{
+    margin-bottom: 3rem;
+}
+
+#content .game-image{
+    width: 30vw;
+    margin: 1rem;
+}
+
 
 /* Footer */
 
@@ -250,6 +290,10 @@ footer{
        
     #content{
         padding: 2rem 4rem;
+    }
+
+    #content .project-container{
+        margin: 0;
     }
 }
 
