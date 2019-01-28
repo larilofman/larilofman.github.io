@@ -176,6 +176,15 @@ nav #nav-projects{
     margin: 2rem 5rem;
 }
 
+#content .project-container p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#content .project-container p a{
+    color: var(--text-color-dark);
+}
+
 #content .project-container .block{
     display: block;
 }
@@ -201,7 +210,7 @@ nav #nav-projects{
 
 
 #content h1{
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     text-align: center;
     font-size: 3rem;
     color: var(--text-color-dark);
@@ -217,6 +226,10 @@ nav #nav-projects{
 #content ul{
     padding: 0 0rem 2rem 0;
     margin-left: 2rem;
+}
+
+#content ul li{
+    font-size: 1.2rem;
 }
 
 #content iframe{
