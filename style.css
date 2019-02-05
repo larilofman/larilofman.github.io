@@ -305,7 +305,7 @@ footer{
     header #header-icons{
         grid-area: hd2;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     
     header #header-icons div{
@@ -317,12 +317,61 @@ footer{
     }
        
     #content{
-        padding: 2rem 4rem;
+        padding: 2rem;
+    }
+
+    #content .content-main-header{
+        margin-bottom: 40px;
+    }
+
+    #content *{
+        padding: 0;      
+    }
+
+    #content h1{
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #content h2{
+        text-align: center;
     }
 
     #content .project-container{
         margin: 0;
+        justify-content: center;
+        justify-items: center;
+        
     }
+
+    #content .project-container iframe{
+        width: 80%;
+        height: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content .game-image{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content .project-container .play-link{  
+        text-align: center;
+        transition: none;
+
+    }
+
+    #content .project-container .play-link:hover{  
+        transform: none;
+    }
+
+    
 }
 
 
