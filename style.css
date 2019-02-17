@@ -237,7 +237,7 @@ nav #nav-projects{
 }
 
 #content .game-image{
-    width: 30vw;
+    max-width: 30vw;
     margin: 1rem;
 }
 
